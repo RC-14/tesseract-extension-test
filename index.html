@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tesseract.js Test</title>
+	<link rel="stylesheet" href="page.css">
+	<script src="./node_modules/tesseract.js/dist/tesseract.min.js" defer></script>
+	<script src="./page.js" defer></script>
+</head>
+
+<body>
+	<div id="input-container">
+		<input id="image-src-input" type="url" required>
+		<br>
+		<select id="language-input" required>
+			<option value="">Please select a language</option>
+			<!-- Languages added with JS -->
+		</select>
+		<br>
+		<button id="confirm-input-button">Recognize Text</button>
+	</div>
+	<main>
+		<!-- Content (tesseract text blocks) gets added with JS -->
+	</main>
+</body>
+
+</html>

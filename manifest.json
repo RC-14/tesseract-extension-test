@@ -1,0 +1,15 @@
+{
+	"manifest_version": 2,
+	"name": "tesseract.js test",
+	"version": "0",
+	"permissions": [
+		"<all_urls>",
+		"menus"
+	],
+	"content_security_policy": "script-src 'self' blob: 'wasm-unsafe-eval' 'unsafe-eval'; worker-src 'self' blob: 'wasm-unsafe-eval' 'unsafe-eval';",
+	"background": {
+		"scripts": [
+			"./background.js"
+		]
+	}
+}

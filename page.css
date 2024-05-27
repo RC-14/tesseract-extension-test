@@ -1,0 +1,36 @@
+html,
+body {
+	margin: 0px;
+	border: none;
+	padding: 0px;
+}
+
+#input-container {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 9999999999999;
+}
+
+main {
+	margin: 50px;
+}
+
+main.loading::after {
+	content: "Loading...";
+}
+
+main.processing::after {
+	content: "Processing...";
+}
+
+.text-box-word {
+	margin: 0px;
+	border: none;
+	padding: 0px;
+
+	position: absolute;
+	color: transparent;
+
+	outline: solid red;
+}
